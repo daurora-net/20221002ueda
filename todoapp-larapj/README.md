@@ -16,10 +16,10 @@
 - Laravel8.83.23(PHPv7.3.29)
 
 ## テーブル設計
-< --- 作成したテーブル設計の画像 ---- >
+![スクリーンショット 2022-10-01 21 12 52](https://user-images.githubusercontent.com/93467733/193409725-b0548d9f-4033-4d61-803f-4c2f4d974701.png)
+
 
 ## ER図
 ![index drawio](https://user-images.githubusercontent.com/93467733/193407587-000d10fa-e048-4e4f-8fd4-9f9708d355ae.png)
 
 ## 他に記載することがあれば記述する
-例） ## 環境構築、## アカウントの種類（テストユーザーなど）
