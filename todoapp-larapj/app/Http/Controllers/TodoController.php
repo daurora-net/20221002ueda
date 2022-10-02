@@ -22,7 +22,7 @@ class todoController extends Controller
     public function update(Request $request)
     {
         $request->validate([
-            'todos' => 'required|max:20'
+            'task' => 'required|max:20'
         ]);
         $form = $request->all();
         unset($form['_token']);
