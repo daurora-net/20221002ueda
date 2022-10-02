@@ -1,14 +1,21 @@
 @extends('layouts.default')
 @section('content')
 <div class="card">
+  @if (count($errors) > 0)
+  <ul class="errors_txt">
+    @foreach ($errors->all() as $error)
+    <li>{{$error}}</li>
+    @endforeach
+  </ul>
+  @endif
   <p class="title mb-15">Todo List</p>
   <div class="todo">
-    <form action="/create" method="post" class="flex between mb-30">
+    <form action="/create" method="post" class="flex between">
       @csrf
       <input type="text" name="task" class="input-add">
       <button class="button-add">追加</button>
     </form>
-    <table>
+    <table class="mt-30">
       <tr>
         <th>作成日</th>
         <th>タスク名</th>
@@ -22,8 +29,8 @@
         </td>
         <form action="/update" method="post">
           @csrf
-          <input type="hidden" name="id" value="{{$todo->id}}">
           <td>
+            <input type="hidden" name="id" value="{{$todo->id}}">
             <input type="text" name="task" value="{{$todo->task}}" class="input-update">
           </td>
           <td>

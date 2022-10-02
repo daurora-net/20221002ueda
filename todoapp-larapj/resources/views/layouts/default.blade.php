@@ -188,6 +188,10 @@
     margin-bottom: 30px;
   }
 
+  .mt-30 {
+    margin-top: 30px;
+  }
+
   .container {
     background-color: #2d197c;
     height: 100vh;
@@ -298,6 +302,15 @@
     background-color: #71fadc;
     border-color: #71fadc;
     color: #fff;
+  }
+
+  .errors_txt {
+    list-style: none;
+    padding: 0 0 10px 0;
+    text-align: left;
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
   }
   </style>
 </head>
